@@ -17,7 +17,7 @@ return [
     |
     */
 
-    'default' => getenv('IS_IN_HEROKU') ? $db_config['connection'] : env('DB_CONNECTION', 'mysql'),
+    'default' => $db_config['connection'],
 
     /*
     |--------------------------------------------------------------------------
