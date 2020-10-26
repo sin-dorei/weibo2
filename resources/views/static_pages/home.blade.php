@@ -1,4 +1,5 @@
 @extends('layouts.default')
+
 @section('content')
 <div class="jumbotron">
     <h1 class="display-4">Hello Laravel</h1>
@@ -7,6 +8,6 @@
     </p>
     <hr class="my-4">
     <p>一切，将从这里开始。</p>
-    <a class="btn btn-lg btn-success" href="#" role="button">现在注册</a>
+    <a class="btn btn-lg btn-success" href="{{ route('signup') }}" role="button">现在注册</a>
 </div>
 @stop
