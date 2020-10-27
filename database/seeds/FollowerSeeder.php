@@ -22,7 +22,7 @@ class FollowerSeeder extends Seeder
         $user->follow($follower_ids);
 
         foreach ($followers as $follower) {
-            $follower->follow([$user_id]);
+            $follower->follow($user_id);
         }
     }
 }
